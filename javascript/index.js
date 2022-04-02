@@ -1,11 +1,7 @@
 const idade = 17
 
-if(idade >= 18){
-  console.log('Deixar entrar!')
-}else{
+if(!(idade >= 18) || idade === 17){
   console.log('Proibir entrada!')  
-}
-
-if(idade === 17){
-  console.log('Volte quando fizer 18 anos.')
+}else{
+  console.log('Deixar entrar!')
 }
