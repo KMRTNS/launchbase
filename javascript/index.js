@@ -1,19 +1,19 @@
-const aluno01 = {
-  nome: "Igor",
-  nota: 9.8
-}
+const alunos = [
+  {
+    nome: "Igor",
+    nota: 9.8
+  },
+  {
+    nome: "Aldriele",
+    nota: 10
+  },
+  {
+    nome: "Beatriz",
+    nota: 2
+  }
+]
 
-const aluno02 = {
-  nome: "Aldriele",
-  nota: 10
-}
-
-const aluno03 = {
-  nome: "Beatriz",
-  nota: 2
-}
-
-const media = (aluno01.nota + aluno02.nota + aluno03.nota) / 3
+const media = (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
 
 if(media > 5){
   console.log(`A media foi de ${media}, parabéns!`)
