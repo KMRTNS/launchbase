@@ -1,0 +1,35 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap";
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background: #282a36;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  border-bottom: solid 1px #333;
+  padding: 32px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+header div {
+  text-align: center;
+}
+
+header div a {
+  margin: 0 16px;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+  text-decoration: none;
+  transition: color 200ms;
+}
+
+header div a:hover{
+  color: #50fa7b;
+}
