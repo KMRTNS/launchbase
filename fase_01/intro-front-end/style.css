@@ -33,3 +33,14 @@ header div a {
 header div a:hover{
   color: #50fa7b;
 }
+
+#wrapper {
+  padding: 32px;
+  text-align: center;
+}
+
+#wrapper img {
+  margin-bottom: 32px;
+  border: 5px solid #50fa7b;
+  border-radius: 50%;
+}
