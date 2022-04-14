@@ -126,6 +126,8 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
 }
 
 .modal {
@@ -142,4 +144,9 @@ header {
   right: 8px;
   color: red;
   cursor: pointer;
+}
+
+.modal-overlay.active {
+  visibility: visible;
+  opacity: 1;
 }
