@@ -127,3 +127,19 @@ header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+.modal {
+  position: relative;
+  margin: 5vh auto;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+}
+
+.modal .close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: red;
+  cursor: pointer;
+}
