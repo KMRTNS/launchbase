@@ -80,3 +80,23 @@ header {
 #links-footer a {
   border-bottom: 1px solid var(--color-green);
 }
+
+/* Cards */
+
+.cards {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.card {
+  background-color: #7159c1;
+}
+
+.card_image-container img {
+  width: 100%;
+}
+
+.card_content,
+.card_info {
+  padding: 24px;
+}
