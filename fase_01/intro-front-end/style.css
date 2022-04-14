@@ -2,6 +2,7 @@
 
 :root {
   --color-green: #50fa7b;
+  --color-rocket: #7159c1;
 }
 
 * {
@@ -84,12 +85,15 @@ header {
 /* Cards */
 
 .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   max-width: 800px;
+  gap: 20px;
 }
 
 .card {
-  background-color: #7159c1;
+  background-color: var(--color-rocket);
 }
 
 .card_image-container img {
@@ -99,4 +103,17 @@ header {
 .card_content,
 .card_info {
   padding: 24px;
+}
+
+.card_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card_price {
+  border-radius: 25px;
+  padding: 5px 20px;
+  background-color: var(--color-rocket);
+  filter: brightness(90%);
+  text-align: center;
 }
