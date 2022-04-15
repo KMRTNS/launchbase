@@ -9,7 +9,7 @@
 ---
 
 - [ ] [intro-pro-web](./intro-pro-web)
-- [ ] [intro-front-end](./intro-front-end)
+- [x] [intro-front-end](./intro-front-end)
 - [ ] [intro-back-end](./intro-back-end)
 
 ---
