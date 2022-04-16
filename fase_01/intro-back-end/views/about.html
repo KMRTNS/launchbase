@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
-    <title>Igor Martins</title>
-  </head>
-  <body>
-    <header>
-      <div class="links">
-        <a href="/">Sobre</a>
-        <a href="/portfolio">Aula</a>
-      </div>
-    </header>
+{% extends "layout.html" %}
+
+  {% block content %}
     <div id="wrapper">
       <img src="https://avatars.githubusercontent.com/u/102094427?v=4" alt="Igor">
       <h1>Igor Martins</h1>
@@ -24,5 +12,4 @@
       <a href="/" target="_blank">Twitter</a>
       <a href="/" target="_blank">Linkedin</a>
     </div>
-  </body>
-</html>
+  {% endblock %}

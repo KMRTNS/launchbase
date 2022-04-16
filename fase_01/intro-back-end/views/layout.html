@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    {% block head %}{% endblock %}
+    <title>Igor Martins</title>
+  </head>
+  <body>
+    <header>
+      <div class="links">
+        <a href="/">Sobre</a>
+        <a href="/portfolio">Aula</a>
+      </div>
+    </header>
+   
+    {% block content %}{% endblock %}
+
+  </body>
+</html>
