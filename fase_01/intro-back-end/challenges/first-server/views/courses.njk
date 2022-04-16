@@ -1,0 +1,74 @@
+{% extends 'layout.njk' %}
+
+  {% block style %}
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/about.css">
+  {% endblock %}
+
+  {% block content %}
+  <h1>Conteúdos</h1>
+
+  <div class="cards">
+    <div class="card" id="do-back-ao-mobile-de-onde-surgiu-a-programacao-fullstack/">
+      <div class="card-img">
+        <img src="https://blog.rocketseat.com.br/content/images/size/w2000/2021/12/Como_ser_um_dev_fullstack.png" alt="Post 1">
+      </div>
+      <div class="card-content">
+        <p>Do back ao mobile: de onde surgiu a programação fullstack</p>
+      </div>
+      <div class="card-info">
+        <p>Felipe Buzzi</p>
+        <p class="card-time">1h</p>
+      </div>
+    </div>
+    <div class="card" id="primeira-next-level-week/">
+      <div class="card-img">
+        <img src="https://blog.rocketseat.com.br/content/images/size/w2000/2020/06/rocketseat_next_level_week.jpg" alt="Post 2">
+      </div>
+      <div class="card-content">
+        <p>Primeira Next Level Week #NLW
+        </p>
+      </div>
+      <div class="card-info">
+        <p>Thiago Marinho</p>
+        <p class="card-time">1h30m</p>
+      </div>
+    </div>
+    <div class="card" id="5-dicas-para-uma-carreira-solida-como-programador-a/">
+      <div class="card-img">
+        <img src="https://blog.rocketseat.com.br/content/images/size/w2000/2020/06/dicas-carreira-solida-programador-rocketseat.png" alt="Post 3">
+      </div>
+      <div class="card-content">
+        <p>5 dicas para uma carreira sólida como programador(a)</p>
+      </div>
+      <div class="card-info">
+        <p>Thiago Marinho</p>
+        <p class="card-time">40m</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay">
+    <div class="modal">
+
+      <div class="function-modal">
+
+        <span class="material-icons-outlined max" id="test">
+          
+        </span>
+
+        <span class="material-icons-outlined close">
+          close
+        </span>
+
+      </div>
+
+      <div class="modal-content">
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+  {% endblock %}
