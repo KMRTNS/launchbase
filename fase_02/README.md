@@ -8,7 +8,8 @@
 
 ---
 
-- [x] Em desenvolvimento!
+- [ ] [gym-control](./gym-control)
+- [ ] [aplication-data](./aplication-data)
 
 ---
 
