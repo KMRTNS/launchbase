@@ -2,14 +2,14 @@
 
   {% block content %}
     <div id="wrapper">
-      <img src="https://avatars.githubusercontent.com/u/102094427?v=4" alt="Igor">
-      <h1>Igor Martins</h1>
-      <h2>Dev Jr</h2>
-      <p>Estudante - Focado em aprender programação na <a href="https://app.rocketseat.com.br" target="_blank">Rocketseat</a></p>
+      <img src="{{ about.avatar_url }}" alt="{{ about.name }}">
+      <h1>{{ about.name }}</h1>
+      <h2>{{ about.role }}</h2>
+      <p>{{ about.description }}</p>
     </div>
     <div id="links-footer" class="links">
-      <a href="/" target="_blank">Github</a>
-      <a href="/" target="_blank">Twitter</a>
-      <a href="/" target="_blank">Linkedin</a>
+      {% for link in about.links %}
+        <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+      {% endfor %}
     </div>
   {% endblock %}
