@@ -10,18 +10,8 @@
     </div>
     <section class="video">
       <div class="card" id="{{item.id}}">
-        <div class="card_image-container {{ 'featured-wrapper' if item.featured }}">
-          <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="{{item.title}}">
-          {% if item.featured %}
-            <div class="featured">Featured</div>
-          {% endif %}
-        </div>
-        <div class="card_content">
-          <p>{{item.title}}</p>
-        </div>
-        <div class="card_info">
-          <p>{{item.time}}</p>
-          <p class="card_price">{{item.price}}</p>
+        <div class="card_video-container">
+          <iframe src="https://www.youtube.com/embed/GykTLqODQuU" frameborder="0"></iframe>
         </div>
       </div>
     </section>
