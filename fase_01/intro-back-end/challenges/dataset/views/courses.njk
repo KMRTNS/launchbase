@@ -1,0 +1,59 @@
+{% extends 'layout.njk' %}
+
+  {% block style %}
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/about.css">
+
+  {% endblock %}
+
+  {% block content %}
+
+  <h1>Conteúdos</h1>
+
+  <div class="cards">
+
+    {% for data in dataset %}
+
+    <div class="card" id="{{ data.id }}">
+      <div class="card-img">
+        <img src="{{ data.img_src }}" alt="{{ data.title }}">
+      </div>
+      <div class="card-content">
+        <p>{{ data.title }}</p>
+      </div>
+      <div class="card-info">
+        <p>{{ data.author }}</p>
+        <p class="card-time">{{ data.time }}</p>
+      </div>
+    </div>
+
+    {% endfor %}
+
+  </div>
+
+  <div class="modal-overlay">
+    <div class="modal">
+
+      <div class="function-modal">
+
+        <span class="material-icons-outlined max" id="test">
+          
+        </span>
+
+        <span class="material-icons-outlined close">
+          close
+        </span>
+
+      </div>
+
+      <div class="modal-content">
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+  
+  {% endblock %}
