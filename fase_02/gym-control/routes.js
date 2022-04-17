@@ -1,7 +1,7 @@
 const express = require('express')
 const routes = express.Router()
 
-routes.get('/route', function(req, res) {
+routes.get('/', function(req, res) {
   return res.send('new route!')
 })
 
