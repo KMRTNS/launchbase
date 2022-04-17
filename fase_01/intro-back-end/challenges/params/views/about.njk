@@ -1,0 +1,38 @@
+{% extends 'layout.njk' %}
+
+  {% block content %}
+  <section>
+
+    <div class="img">
+      <img src="{{ data.logo }}" alt="Logo">
+    </div>
+
+    <div class="about">
+
+      <h1>{{ data.title }}</h1>
+      <p>{{ data.description }}</p>
+
+    </div>
+
+    <div class="list">
+      
+      <ul>
+        {% for item in data.list %}
+
+        <li>{{ item.technology }}</li>
+
+        {% endfor %}
+      </ul>
+      
+    </div>
+
+    <div class="links">
+      {% for link in data.links %}
+
+      <a href="{{ link.url }}">{{ link.urlName }}</a>
+
+      {% endfor %}
+    </div> 
+
+  </section>
+  {% endblock %}
