@@ -6,7 +6,7 @@
 
 ### **Índice**
 
-- [x] [**Preparação e Estudos**]()
+- [x] [**Preparação e Estudos**](#)
   - [x] Instruções Básicas
   - [x] Fortalecendo sua mentalidade
   - [x] Cronograma de Estudos
