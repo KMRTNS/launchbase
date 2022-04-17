@@ -98,10 +98,6 @@ header {
   cursor: pointer;
 }
 
-.card_image-container {
-  position: relative;
-}
-
 .card_image-container img {
   width: 100%;
 }
@@ -168,6 +164,10 @@ iframe {
 }
 
 /* Featured */
+
+.featured-wrapper.card_image-container {
+  position: relative;
+}
 
 .featured {
   position: absolute;
