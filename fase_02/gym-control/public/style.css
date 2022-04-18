@@ -56,3 +56,12 @@ header {
 .links a + a {
   margin-left: 32px;
 }
+
+/* Card */
+
+.card {
+  margin: 45px auto;
+  width: 800px;
+  height: 400px;
+  background-color: white;
+}
