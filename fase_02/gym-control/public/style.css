@@ -33,14 +33,19 @@ header {
   color: #777;
 }
 
-.links a:hover::after {
+.links a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -4px;
-  width: 100%;
+  width: 0;
   height: 2px;
   background-color: var(--primary-color);
+}
+
+.links a:hover::after {
+  width: 100%;
+  transition: width 350ms ease-in-out;
 }
 
 .links a.active {
