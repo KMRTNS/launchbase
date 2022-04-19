@@ -18,7 +18,13 @@ routes.get('/members', function(req, res) {
 })
 
 routes.post('/instructors', function(req, res) {
-  return res.send(req.body)
+  const keys = Object.keys(req.body)
+  for(key of keys) {
+    if(req.body[key] == '') {
+      return res.send('Please, fill all fields!')
+    }
+  }
+  return
 })
 
 module.exports = routes
