@@ -13,8 +13,9 @@ exports.show = function(req, res) {
     return res.send('Instructor not found!')
   }
 
-  return res.send(foundInstructor)
-
+  return res.render('instructors/show', { 
+    instructor: foundInstructor 
+  })
 }
 
 exports.post = function(req, res) {
