@@ -1,3 +1,13 @@
 {
-  "instructors": []
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "htpp://LSfitness.com",
+      "name": "Igor Martins",
+      "birth": 1650499200000,
+      "gender": "M",
+      "services": "Musculação, Natação",
+      "created_at": 1650500783695
+    }
+  ]
 }
