@@ -5,6 +5,7 @@
     type="url" 
     name="avatar_url"
     placeholder="htpp://"
+    value="{{ dataseat.avatar_url }}"
     >
   </div>
 </div>
@@ -14,7 +15,8 @@
     <input 
     type="text" 
     name="name"
-    placeholder="Nome do instrutor"          
+    placeholder="Nome do instrutor"
+    value="{{ dataseat.name }}"       
     >
   </div>
 </div>
@@ -25,15 +27,32 @@
   <div>
     <input 
     type="date" 
-    name="birth"      
+    name="birth"
+    value="{{ dataseat.birth }}"    
     >
   </div>
 </div>
 <div class="item">
   <div>Sexo</div>
   <div>
-    <span><input type="radio" name="gender" value="M">Masculino</span>
-    <span><input type="radio" name="gender" value="F">Ferminino</span>
+    <span><input 
+    type="radio" 
+    name="gender" 
+    value="M"
+    {% if dataseat.gender == "M"%}
+      checked
+    {% endif %}
+    >
+    Masculino</span>
+    <span><input 
+    type="radio" 
+    name="gender" 
+    value="F"
+    {% if dataseat.gender == "F"%}
+      checked
+    {% endif %}
+    >
+    Ferminino</span>
   </div>
 </div>
 <div class="item">
@@ -43,6 +62,7 @@
     type="text" 
     name="services"
     placeholder="Separe os serviços prestados por vírgula"
+    value="{{ dataseat.services }}"
     >
   </div>
 </div>

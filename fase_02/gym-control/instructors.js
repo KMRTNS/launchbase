@@ -53,3 +53,18 @@ exports.post = function(req, res) {
     return res.redirect('/instructors')
   })
 }
+
+exports.edit = function(req, res) {
+
+  const { id } = req.params
+
+  const foundInstructor = data.instructors.find(function(instructor){
+    return instructor.id == id
+  })
+
+  if(!foundInstructor) {
+    return res.send('Instructor not found!')
+  }
+
+  return res.render('instructors/edit',  { dataseat: foundInstructor })
+}
