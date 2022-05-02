@@ -6,6 +6,10 @@ const { age, date } = require('./utils')
 // HTTP VERBS
 
 //GET - MOSTRAR
+exports.index = function(req, res) {
+  return res.render('instructors/index', { instructors: data.instructors })
+}
+
 exports.show = function(req, res) {
   const { id } = req.params
 
