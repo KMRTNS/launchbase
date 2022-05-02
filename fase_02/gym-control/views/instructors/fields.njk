@@ -5,7 +5,7 @@
     type="url" 
     name="avatar_url"
     placeholder="htpp://"
-    value="{{ dataseat.avatar_url }}"
+    value="{{ instructor.avatar_url }}"
     >
   </div>
 </div>
@@ -16,7 +16,7 @@
     type="text" 
     name="name"
     placeholder="Nome do instrutor"
-    value="{{ dataseat.name }}"       
+    value="{{ instructor.name }}"       
     >
   </div>
 </div>
@@ -28,7 +28,7 @@
     <input 
     type="date" 
     name="birth"
-    value="{{ dataseat.birth }}"    
+    value="{{ instructor.birth }}"    
     >
   </div>
 </div>
@@ -39,7 +39,7 @@
     type="radio" 
     name="gender" 
     value="M"
-    {% if dataseat.gender == "M"%}
+    {% if instructor.gender == "M"%}
       checked
     {% endif %}
     >
@@ -48,7 +48,7 @@
     type="radio" 
     name="gender" 
     value="F"
-    {% if dataseat.gender == "F"%}
+    {% if instructor.gender == "F"%}
       checked
     {% endif %}
     >
@@ -62,7 +62,7 @@
     type="text" 
     name="services"
     placeholder="Separe os serviços prestados por vírgula"
-    value="{{ dataseat.services }}"
+    value="{{ instructor.services }}"
     >
   </div>
 </div>

@@ -3,6 +3,9 @@ const fs = require('fs')
 const data = require('./data.json')
 const { age, date } = require('./utils')
 
+// HTTP VERBS
+
+//GET - MOSTRAR
 exports.show = function(req, res) {
   const { id } = req.params
 
@@ -24,6 +27,7 @@ exports.show = function(req, res) {
   return res.render('instructors/show', { instructor })
 }
 
+//POST - CRIAR
 exports.post = function(req, res) {
   const keys = Object.keys(req.body)
   for(key of keys) {
@@ -54,6 +58,7 @@ exports.post = function(req, res) {
   })
 }
 
+//PUT - EDIT
 exports.edit = function(req, res) {
 
   const { id } = req.params
@@ -71,5 +76,37 @@ exports.edit = function(req, res) {
     birth: date(foundInstructor.birth)
   }
 
-  return res.render('instructors/edit',  { dataseat: instructor })
+  return res.render('instructors/edit',  { instructor })
+}
+
+//PUT - ATUALIZAR
+exports.put = function(req, res) {
+  const { id } = req.body
+
+  let index = 0
+
+  const foundInstructor = data.instructors.find(function(instructor, foundindex){
+    if (instructor.id == id) {
+      index = foundindex
+      return true
+    }
+  })
+
+  if(!foundInstructor) {
+    return res.send('Instructor not found!')
+  }
+
+  const instructor = {
+    ...foundInstructor,
+    ...req.body,
+    birth: Date.parse(req.body.birth)
+  }
+
+  data.instructors[index] = instructor
+
+  fs.writeFile('data.json'), JSON.stringify(data, null, 2), function(err) {
+    if(err) return res.send('Found error!')
+
+    return res.redirect(`/instructors/${id}`)
+  }
 }
