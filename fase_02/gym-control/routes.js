@@ -32,5 +32,6 @@ routes.post('/instructors', instructors.post)
 routes.put('/instructors', instructors.put)
 
 // DELETE = DELETAR - RESOURCER
+routes.delete('/instructors', instructors.delete)
 
 module.exports = routes
