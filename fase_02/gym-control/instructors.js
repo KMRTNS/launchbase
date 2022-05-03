@@ -103,6 +103,7 @@ exports.put = function(req, res) {
   const instructor = {
     ...foundInstructor,
     ...req.body,
+    id: Number(req.body.id),
     birth: Date.parse(req.body.birth)
   }
 

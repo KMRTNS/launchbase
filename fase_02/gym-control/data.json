@@ -1,8 +1,8 @@
 {
   "instructors": [
     {
-      "id": "1",
-      "avatar_url": "https:/source.unsplash.com/collection/2001258/500x500",
+      "id": 1,
+      "avatar_url": "https://xesque.rocketseat.dev/users/avatar/profile-ad32e375-fc1f-4bed-a80d-b8c4acb13885-1650541464659.jpg",
       "name": "Igor Martins",
       "birth": 926208000000,
       "gender": "M",
