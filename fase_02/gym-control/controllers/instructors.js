@@ -1,11 +1,8 @@
 const { query } = require('express')
 const fs = require('fs')
-const data = require('./data.json')
-const { age, date } = require('./utils')
+const data = require('../data.json')
+const { age, date } = require('../utils')
 
-// HTTP VERBS
-
-//GET - MOSTRAR
 exports.index = function(req, res) {
   return res.render('instructors/index', { instructors: data.instructors })
 }
@@ -31,7 +28,10 @@ exports.show = function(req, res) {
   return res.render('instructors/show', { instructor })
 }
 
-//POST - CRIAR
+exports.create = function(req, res) {
+  return res.render('instructors/create')
+}
+
 exports.post = function(req, res) {
   const keys = Object.keys(req.body)
   for(key of keys) {
@@ -62,7 +62,6 @@ exports.post = function(req, res) {
   })
 }
 
-//PUT - EDIT
 exports.edit = function(req, res) {
 
   const { id } = req.params
@@ -83,7 +82,6 @@ exports.edit = function(req, res) {
   return res.render('instructors/edit',  { instructor })
 }
 
-//PUT - ATUALIZAR
 exports.put = function(req, res) {
   const { id } = req.body
 
@@ -116,7 +114,6 @@ exports.put = function(req, res) {
   })
 }
 
-//DELETE - DELETAR
 exports.delete = function(req, res) {
   const { id } = req.body 
 
