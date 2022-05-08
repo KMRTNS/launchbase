@@ -5,7 +5,7 @@
     type="url" 
     name="avatar_url"
     placeholder="htpp://"
-    value="{{ instructor.avatar_url }}"
+    value="{{ member.avatar_url }}"
     >
   </div>
 </div>
@@ -15,7 +15,7 @@
     <input 
     type="text" 
     name="name"
-    value="{{ instructor.name }}"       
+    value="{{ member.name }}"       
     >
   </div>
 </div>
@@ -25,7 +25,7 @@
     <input 
     type="email" 
     name="email"
-    value="{{ instructor.email }}"       
+    value="{{ member.email }}"       
     >
   </div>
 </div>
@@ -37,7 +37,7 @@
     <input 
     type="date" 
     name="birth"
-    value="{{ instructor.birth }}"    
+    value="{{ member.birth }}"    
     >
   </div>
 </div>
@@ -48,7 +48,7 @@
     type="radio" 
     name="gender" 
     value="M"
-    {% if instructor.gender == "M"%}
+    {% if member.gender == "M"%}
       checked
     {% endif %}
     >
@@ -57,7 +57,7 @@
     type="radio" 
     name="gender" 
     value="F"
-    {% if instructor.gender == "F"%}
+    {% if member.gender == "F"%}
       checked
     {% endif %}
     >
@@ -114,7 +114,7 @@
     <input 
     type="number" 
     name="weight"
-    value="{{ instructor.weight }}"    
+    value="{{ member.weight }}"    
     >
   </div>
 </div>
@@ -126,7 +126,7 @@
     <input 
     type="number" 
     name="height"
-    value="{{ instructor.height }}"    
+    value="{{ member.height }}"    
     >
   </div>
 </div>
