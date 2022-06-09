@@ -8,7 +8,11 @@
 
 ---
 
-- [x] Em desenvolvimento!
+- [ ] [launchstore](./launchstore)
+- [ ] [image-upload](./image-upload)
+- [ ] [listing-products](./listing-products)
+- [ ] [user-registration](./user-registration)
+- [ ] [session-control](./session-control)
 
 ---
 
