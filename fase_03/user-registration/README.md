@@ -8,7 +8,7 @@
 
 - [ ] [**Cadastrando Usuários**](#)
 
-  - [ ] [*Registro de Usuários**](#)
+  - [ ] [**Registro de Usuários**](#)
     - [ ] [Apresentaçao do módulo e SQL da tabela de usuários](#)
     - [ ] [Rotas e Controllers de usuários](#)
     - [ ] [ES6, Classes e Herança](#)
