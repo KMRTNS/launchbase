@@ -20,7 +20,7 @@
     - [x] [Resetando estilos do navegador](#)
     - [x] [Conhecendo a cascata do CSS](#)
     - [x] [Estilizando fontes e links do menu](#)
-    - [x] [**Desafio 2-1**](#)
+    - [x] [**Desafio 2-1**](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md)
 
   - [x] [**Página sobre**](#)
     - [x] [Adicionando imagens no HTML](#)
@@ -30,7 +30,7 @@
     - [x] [Estilizando textos e fontes com CSS](#)
     - [x] [Variáveis no CSS](#)
     - [x] [Links para redes socias](#)
-    - [X] [**Desafio 2-2**](#)
+    - [X] [**Desafio 2-2**](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md)
 
   - [X] [**Página de portfólio**](#)
     - [X] [Iniciando página de portfólio](#)
@@ -49,7 +49,7 @@
   - [X] [**Vídeo dinâmico**](#)
     - [X] [Adicionando conteúdo externo com iframe](#)
     - [X] [Substituindo conteúdo com JavaScript](#)
-    - [X] [**Desafio 2-3**](#)
+    - [X] [**Desafio 2-3**](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md)
 
 ---
 
